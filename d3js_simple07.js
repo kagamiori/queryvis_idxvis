@@ -1,3 +1,4 @@
+//Code that displays heatmap is modified from http://bl.ocks.org/tjdecke/5558084
 var query_no = 2;
 
 //queries[] is the statics of query using no index
