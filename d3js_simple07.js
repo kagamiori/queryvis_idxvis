@@ -162,9 +162,9 @@ var column_ls =
 ];
 
 
-var find_set = [{name: "None", idx_id: 0}, {name: "o_orderkey", idx_id: 68719476736}, {name: "o_orderdate", idx_id: 137438953472}, {name: "l_orderkey", idx_id: 134217728}];
+var find_set = [{name: "None", idx_id: 0}, {name: "o_orderkey", idx_id: 68719476736}, {name: "o_orderdate", idx_id: 137438953472}, {name: "l_orderkey", idx_id: 134217728}, {name: "l_shipdate", idx_id: 16777216}];
 
-var find_set_sz = 4;
+var find_set_sz = 5;
 
 
 var query_text = 
@@ -197,9 +197,9 @@ var margin = { top: 50, right: 0, bottom: 100, left: 50 },
           colors = ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"],
           table_ls = ["part", "supplier", "partsupp", "customer", "nation", "region", "lineitem", "orders"],
 	  query_ls = ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10", "Q11", "Q12", "Q13", "Q14"]
-	  datasets = ["noindex.tsv", "idx_7.tsv", "idx_8.tsv", "idx_715.tsv"];
-	  DATASETS_SZ = 4;
-	  datasets_idx_map = [[0, 0], [68719476736, 2], [134217728, 1], [137573171200, 3]]; //{binary set (by sum), index in datasets[]}
+	  datasets = ["noindex.tsv", "idx_7.tsv", "idx_8.tsv", "idx_715.tsv", "idx_lshipdate.tsv"];
+	  DATASETS_SZ = 5;
+	  datasets_idx_map = [[0, 0], [68719476736, 2], [134217728, 1], [137573171200, 3], [16777216, 4]]; //{binary set (by sum), index in datasets[]}
 		  
 var svg = d3.select("#heatmap").append("svg")
           .attr("width", width + margin.left + margin.right)
